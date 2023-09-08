@@ -15,6 +15,12 @@ namespace Calorie_Counter.Controllers
         {
             return View();
         }
+
+        public ActionResult CalculatorInput()
+        {
+            Users userModel = new Users();
+            return View(userModel);
+        }
     }
 }
 
