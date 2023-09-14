@@ -18,14 +18,15 @@
         <fieldset>
             <legend>Tell me about yourself</legend>
             <div>Gender</div>
-
+            <div class="editor-field">@Html.CheckBox("IsMale", Model.IsMale)</div>
+            <div class="editor-field">@Html.CheckBox("IsFemale", Model.IsFemale)</div>
             <div>Height</div>
-
+            <div class="editor-field"><input name="Height" value="@Model.Height" /></div>
             <div>Weight</div>
-
+            <div class="editor-field"><input name="Weight" value="@Model.Weight" /></div>
             <div>Age</div>
-
-            <div class="submit"><input type="submit" value="Generate Results!"/></div>
+            <div class="editor-field"><input name="Age" value="@Model.Age" /></div>
+            <div class="submit"><input type="submit" value="Generate Results!" /></div>
 
         </fieldset>
 }
